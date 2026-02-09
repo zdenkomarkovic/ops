@@ -19,28 +19,28 @@ const Hero = () => {
       <div className="container-custom w-full">
         <div className=" mx-auto">
           {/* Hero Grid - Image and Content */}
-          <div className="grid md:grid-cols-[42%_58%] items-center mb-2 md:mb-8 gap-3 md:gap-8">
+          <div className="grid md:grid-cols-[42%_58%] items-center mb-4 md:mb-8 gap-6 md:gap-8">
             {/* Left - Content */}
             <div className="text-center md:text-left">
               {/* Main Title */}
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 md:mb-6">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 md:mb-6">
                 {content.hero.title}
               </h1>
 
               {/* Subtitle */}
-              <p className="text-base md:text-xl text-gray-700 mb-2 md:mb-6 font-semibold leading-tight">
+              <p className="text-lg md:text-2xl text-gray-700 mb-3 md:mb-6 leading-tight font-semibold">
                 {content.hero.subtitle}
               </p>
 
               {/* Description */}
-              <p className="text-sm md:text-lg text-gray-600 mb-2 md:mb-8">
+              <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-8">
                 {content.hero.description}
               </p>
 
               {/* CTA Button */}
               <button
                 onClick={scrollToContact}
-                className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-4 md:px-8 py-1.5 md:py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
+                className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
               >
                 Kontaktirajte nas
               </button>
@@ -57,13 +57,6 @@ const Hero = () => {
                 priority
               />
             </div>
-          </div>
-
-          {/* Key Message - Highlighted */}
-          <div className="bg-white/80 backdrop-blur-sm border-l-4 border-primary-500 p-2 md:p-6 rounded-lg shadow-lg max-w-4xl mx-auto text-center">
-            <p className="text-base md:text-2xl lg:text-3xl font-semibold text-primary-500 italic">
-              "{content.hero.keyMessage}"
-            </p>
           </div>
         </div>
       </div>

@@ -1,9 +1,15 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { content } from '@/constants/content';
-import { FaInstagram, FaYoutube, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import Image from "next/image";
+import Link from "next/link";
+import { content } from "@/constants/content";
+import {
+  FaInstagram,
+  FaYoutube,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -22,7 +28,8 @@ const Footer = () => {
               />
             </Link>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Od prvog pokreta do prvog skoka - Udruženje za podršku ranom razvoju deteta
+              Od prvog pokreta do prvog skoka - Udruženje za podršku ranom
+              razvoju deteta
             </p>
           </div>
 
@@ -63,13 +70,19 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start">
                 <FaEnvelope className="mt-1 mr-2 flex-shrink-0 text-primary-400" />
-                <a href={`mailto:${content.contact.email}`} className="hover:text-primary-400 transition-colors break-all">
+                <a
+                  href={`mailto:${content.contact.email}`}
+                  className="hover:text-primary-400 transition-colors break-all"
+                >
                   {content.contact.email}
                 </a>
               </li>
               <li className="flex items-center">
                 <FaPhone className="mr-2 flex-shrink-0 text-primary-400" />
-                <a href={`tel:${content.contact.phone}`} className="hover:text-primary-400 transition-colors">
+                <a
+                  href={`tel:${content.contact.phone}`}
+                  className="hover:text-primary-400 transition-colors"
+                >
                   {content.contact.phone}
                 </a>
               </li>
@@ -107,9 +120,21 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-700 pt-8 text-center">
+        <div className="border-t border-gray-700 pt-8 text-center flex flex-col md:flex-row justify-around">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} OPS - Od prvog pokreta do prvog skoka. Sva prava zadržana.
+            © {new Date().getFullYear()} OPS - Od prvog pokreta do prvog skoka.
+            Sva prava zadržana.
+          </p>
+          <p className="text-gray-400">
+            Izrada sajta:{" "}
+            <Link
+              href="https://manikamwebsolutions.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary-500 transition-colors underline"
+            >
+              Manikam Web Solutions
+            </Link>
           </p>
         </div>
       </div>

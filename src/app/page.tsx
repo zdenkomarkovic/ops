@@ -6,7 +6,6 @@ import Values from "@/components/Values";
 import President from "@/components/President";
 import Gallery from "@/components/Gallery";
 import Education from "@/components/Education";
-import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <Values />
       <President />
       <Gallery />
-      <Contact />
     </>
   );
 }
