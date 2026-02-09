@@ -28,12 +28,12 @@ const Hero = () => {
               </h1>
 
               {/* Subtitle */}
-              <p className="text-lg md:text-2xl text-gray-700 mb-3 md:mb-6">
+              <p className="text-base md:text-xl text-gray-700 mb-3 md:mb-6 font-semibold leading-tight">
                 {content.hero.subtitle}
               </p>
 
               {/* Description */}
-              <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-8">
+              <p className="text-sm md:text-lg text-gray-600 mb-4 md:mb-8">
                 {content.hero.description}
               </p>
 
