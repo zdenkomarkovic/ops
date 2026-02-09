@@ -27,18 +27,18 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
-      <div className="container-custom">
+    <nav className="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50 py-1 md:py-2">
+      <div className="container-custom px-4  ">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="hover:opacity-80 transition-opacity">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="OPS Logo"
-              width={60}
-              height={60}
-              className="h-16 w-auto"
+                width={60}
+                height={60}
+                className="h-16 w-auto"
               />
             </Link>
           </div>
