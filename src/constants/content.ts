@@ -2,7 +2,7 @@ export const content = {
   hero: {
     title: "Od prvog pokreta do prvog skoka",
     subtitle:
-      "Udruženje Od prvog pokreta do prvog skoka (OPS) posvećeno je unapređenju ranog razvoja i stručnog usavršavanja profesionalaca koji učestvuju u ranom razvoju dece (medicinski radnici, fizioterapeuti, radni terapeuti, defektolozi, ortopedi i ostali saradnici).",
+      "Udruženje je posvećeno unapređenju ranog razvoja i stručnog usavršavanja profesionalaca koji učestvuju u ranom razvoju dece (medicinski radnici, fizioterapeuti, radni terapeuti, defektolozi, ortopedi i ostali saradnici).",
     description:
       "Okupljamo stručnjake i roditelje kroz edukacije, projekte i podršku deci i porodicama.",
     keyMessage: "Razvoj počinje tamo gde se dete oseća sigurno.",
@@ -12,8 +12,8 @@ export const content = {
     title: "Naša misija",
     paragraphs: [
       "Naša misija je unapređenje ranog razvoja dece kroz terapijske i edukativne prakse koje poštuju emocionalni komfor deteta, njegov tempo i individualne potrebe.",
-      "Zalažemo se za pristup u kome se napredak ne postiže pritiskom, već sigurnošću, odnosom i razumevanjem."
-    ]
+      "Zalažemo se za pristup u kome se napredak ne postiže pritiskom, već sigurnošću, odnosom i razumevanjem.",
+    ],
   },
 
   missionIntro: {
@@ -54,8 +54,8 @@ export const content = {
     items: [
       "Dete ima pravo da bude poštovano u terapijskom procesu",
       "Stručnjaci rade u skladu sa savremenim, etičkim i razvojno usmerenim principima",
-      "Emocionalna sigurnost postaje standard, a ne izuzetak u radu sa decom"
-    ]
+      "Emocionalna sigurnost postaje standard, a ne izuzetak u radu sa decom",
+    ],
   },
 
   approach: {
@@ -100,7 +100,7 @@ export const content = {
       "Emocionalna sigurnost",
       "Stručnost i kontinuirano učenje",
       "Empatija i saradnja",
-      "Odgovornost prema detetu i porodici"
+      "Odgovornost prema detetu i porodici",
     ],
     messageTitle: "Naša poruka",
     message: "Dete koje se oseća sigurno – dete koje može da napreduje.",
@@ -166,11 +166,12 @@ export const content = {
       "Pored direktnog rada sa decom, značajan deo našeg delovanja usmeren je na edukaciju stručnjaka.",
     intro2:
       "Smatramo da savremeni stručnjak mora da zna ne samo šta radi, već i kako radi – sa svesnošću o emocionalnim potrebama deteta.",
-    practiceTitle: "Kroz edukacije, seminare i projekte, podstičemo razvoj praksi koje su:",
+    practiceTitle:
+      "Kroz edukacije, seminare i projekte, podstičemo razvoj praksi koje su:",
     practiceItems: [
       "stručno utemeljene",
       "etičke",
-      "usmerene na dete, a ne isključivo na dijagnozu"
+      "usmerene na dete, a ne isključivo na dijagnozu",
     ],
   },
 
@@ -183,8 +184,8 @@ export const content = {
     address: "Beograd, Srbija",
     social: {
       instagram: "https://www.instagram.com/vezbezabebe/",
-      youtube: "https://www.youtube.com/@Odprvogpokretadoprvogskoka"
-    }
+      youtube: "https://www.youtube.com/@Odprvogpokretadoprvogskoka",
+    },
   },
 
   biography: {
