@@ -18,7 +18,24 @@
       "Bash(for i in 1 2 3 4)",
       "Bash(do cp \"E:\\\\Sajtovi\\\\ops\\\\public\\\\images-backup/septembar2025 \\($i\\).jpg\" \"E:\\\\Sajtovi\\\\ops\\\\public\\\\images\\\\edukacije\\\\septembar-2025/septembar-2025-$i.jpg\")",
       "Bash(done)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "Bash(findstr:*)",
+      "Bash(du:*)",
+      "Bash(choco --version:*)",
+      "Bash(ls:*)",
+      "Bash(FFMPEG=\"E:/Sajtovi/ops/node_modules/ffmpeg-static/ffmpeg.exe\")",
+      "Bash(\"$FFMPEG\" -i \"E:/Sajtovi/ops/public/images/edukacije/mart-2025/mart-2025.mp4\")",
+      "Bash(\"$FFMPEG\" -i \"E:/Sajtovi/ops/public/images/edukacije/oktobar-2025/oktobar-2025.mp4\")",
+      "Bash(\"$FFMPEG\" -version)",
+      "Bash(\"/c/nvm4w/nodejs/node.exe\" -e \"const p = require\\(''./node_modules/ffmpeg-static''\\); console.log\\(p\\)\")",
+      "Bash(cmd /c \"E:\\\\Sajtovi\\\\ops\\\\node_modules\\\\ffmpeg-static\\\\ffmpeg.exe -version\")",
+      "Bash(powershell -Command \"& ''E:\\\\Sajtovi\\\\ops\\\\node_modules\\\\ffmpeg-static\\\\ffmpeg.exe'' -version 2>&1\")",
+      "Bash(powershell -Command:*)",
+      "Bash(Select-String \"Duration|Video:|Stream\")",
+      "Bash(FFMPEG=\"E:\\\\Sajtovi\\\\ops\\\\node_modules\\\\ffmpeg-static\\\\ffmpeg.exe\")",
+      "Bash(echo:*)",
+      "Bash(powershell:*)",
+      "Bash(npm uninstall:*)"
     ]
   }
 }

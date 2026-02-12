@@ -35,26 +35,26 @@ const edukacije: Edukacija[] = [
   {
     title: "Edukacija",
     date: "Septembar 2025",
-    coverImage: "/images/edukacije/septembar-2025/septembar-2025-1.jpg",
+    coverImage: "/images/edukacije/septembar-2025/septembar-2025-1.webp",
     media: Array.from({ length: 4 }, (_, i) => ({
       type: "image" as const,
-      src: `/images/edukacije/septembar-2025/septembar-2025-${i + 1}.jpg`,
+      src: `/images/edukacije/septembar-2025/septembar-2025-${i + 1}.webp`,
       alt: `Edukacija septembar 2025 – slika ${i + 1}`,
     })),
   },
   {
     title: "Edukacija",
     date: "Jun 2025",
-    coverImage: "/images/edukacije/jun-2025/jun-2025-1.jpg",
+    coverImage: "/images/edukacije/jun-2025/jun-2025-1.webp",
     media: [
       {
         type: "image",
-        src: "/images/edukacije/jun-2025/jun-2025-1.jpg",
+        src: "/images/edukacije/jun-2025/jun-2025-1.webp",
         alt: "Edukacija jun 2025 – slika 1",
       },
       {
         type: "image",
-        src: "/images/edukacije/jun-2025/jun-2025-2.jpg",
+        src: "/images/edukacije/jun-2025/jun-2025-2.webp",
         alt: "Edukacija jun 2025 – slika 2",
       },
       {
@@ -66,21 +66,21 @@ const edukacije: Edukacija[] = [
   {
     title: "Edukacija",
     date: "Maj 2025",
-    coverImage: "/images/edukacije/maj-2025/maj-2025-1.jpg",
+    coverImage: "/images/edukacije/maj-2025/maj-2025-1.webp",
     media: Array.from({ length: 5 }, (_, i) => ({
       type: "image" as const,
-      src: `/images/edukacije/maj-2025/maj-2025-${i + 1}.jpg`,
+      src: `/images/edukacije/maj-2025/maj-2025-${i + 1}.webp`,
       alt: `Edukacija maj 2025 – slika ${i + 1}`,
     })),
   },
   {
     title: "Edukacija",
     date: "April 2025",
-    coverImage: "/images/edukacije/april-2025/april-2025-1.jpg",
+    coverImage: "/images/edukacije/april-2025/april-2025-1.webp",
     media: [
       ...Array.from({ length: 20 }, (_, i) => ({
         type: "image" as const,
-        src: `/images/edukacije/april-2025/april-2025-${i + 1}.jpg`,
+        src: `/images/edukacije/april-2025/april-2025-${i + 1}.webp`,
         alt: `Edukacija april 2025 – slika ${i + 1}`,
       })),
     ],
@@ -88,16 +88,16 @@ const edukacije: Edukacija[] = [
   {
     title: "Edukacija",
     date: "Mart 2025",
-    coverImage: "/images/edukacije/mart-2025/mart-2025-1.jpg",
+    coverImage: "/images/edukacije/mart-2025/mart-2025-1.webp",
     media: [
       {
         type: "image",
-        src: "/images/edukacije/mart-2025/mart-2025-1.jpg",
+        src: "/images/edukacije/mart-2025/mart-2025-1.webp",
         alt: "Edukacija mart 2025 – slika 1",
       },
       {
         type: "image",
-        src: "/images/edukacije/mart-2025/mart-2025-2.jpg",
+        src: "/images/edukacije/mart-2025/mart-2025-2.webp",
         alt: "Edukacija mart 2025 – slika 2",
       },
       {
