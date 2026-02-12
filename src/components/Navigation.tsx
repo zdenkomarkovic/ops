@@ -11,7 +11,8 @@ const Navigation = () => {
   const navItems = [
     { name: "Početna", href: "/" },
     { name: "O udruženju", href: "/o-nama" },
-
+    { name: "Kursevi", href: "/kursevi" },
+    { name: "Statut", href: "/statut" },
     { name: "Kontakt", href: "/kontakt" },
   ];
 

@@ -6,7 +6,19 @@
       "Bash(npm install:*)",
       "Bash(timeout 10 npm run dev)",
       "Bash(npm run build:*)",
-      "Bash(npm run optimize-images:*)"
+      "Bash(npm run optimize-images:*)",
+      "Bash(npx next build:*)",
+      "Bash(magick:*)",
+      "Bash(convert:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(where:*)",
+      "Bash(node -e:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(for i in 1 2 3 4)",
+      "Bash(do cp \"E:\\\\Sajtovi\\\\ops\\\\public\\\\images-backup/septembar2025 \\($i\\).jpg\" \"E:\\\\Sajtovi\\\\ops\\\\public\\\\images\\\\edukacije\\\\septembar-2025/septembar-2025-$i.jpg\")",
+      "Bash(done)",
+      "Bash(test:*)"
     ]
   }
 }
