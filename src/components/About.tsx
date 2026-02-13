@@ -7,7 +7,7 @@ const About = () => {
       id="about"
       className="section-padding bg-gradient-to-br from-primary-50 to-white"
     >
-      <div className="container-custom">
+      <div className="container-custom pt-16">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
           {content.about.title}
         </h2>
