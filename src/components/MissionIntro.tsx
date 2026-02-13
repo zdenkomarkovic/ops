@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { content } from "@/constants/content";
 
 const MissionIntro = () => {
@@ -46,6 +47,14 @@ const MissionIntro = () => {
               </li>
             ))}
           </ul>
+
+          <div className="text-center mt-8">
+            <Link href="/kontakt">
+              <button className="bg-secondary-500 hover:bg-secondary-500/80 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105">
+                Roditelji imate pitanje? Pišite nam
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { content } from "@/constants/content";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -69,6 +70,14 @@ const Approach = () => {
             height={800}
             className="w-full h-auto object-cover"
           />
+        </div>
+
+        <div className="text-center mt-10">
+          <Link href="/kontakt">
+            <button className="bg-secondary-500 hover:bg-secondary-500/80 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105">
+              Roditelji imate pitanje? Pišite nam
+            </button>
+          </Link>
         </div>
       </div>
     </section>

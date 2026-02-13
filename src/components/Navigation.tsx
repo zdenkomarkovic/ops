@@ -3,10 +3,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   const navItems = [
     { name: "Početna", href: "/" },
@@ -18,13 +21,24 @@ const Navigation = () => {
 
   const handleNavClick = (href: string) => {
     if (href.startsWith("#")) {
-      // Scroll to section
       const element = document.querySelector(href);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
     setIsOpen(false);
+  };
+
+  const handleUclanjenje = () => {
+    setIsOpen(false);
+    if (pathname === "/") {
+      const element = document.querySelector("#uclanjenje");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push("/#uclanjenje");
+    }
   };
 
   return (
@@ -45,7 +59,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) =>
               item.href.startsWith("#") ? (
                 <button
@@ -65,6 +79,12 @@ const Navigation = () => {
                 </Link>
               )
             )}
+            <button
+              onClick={handleUclanjenje}
+              className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-5 py-2 rounded-lg shadow transition-all duration-200 hover:scale-105"
+            >
+              Učlani se
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -102,6 +122,12 @@ const Navigation = () => {
                   </Link>
                 )
               )}
+              <button
+                onClick={handleUclanjenje}
+                className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-4 py-3 rounded-lg shadow transition-all duration-200 text-left"
+              >
+                Učlani se
+              </button>
             </div>
           </div>
         )}

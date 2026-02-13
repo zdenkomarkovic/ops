@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { content } from "@/constants/content";
+import Link from "../../node_modules/next/link";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -38,12 +39,12 @@ const Hero = () => {
               </p>
 
               {/* CTA Button */}
-              <button
-                onClick={scrollToContact}
+              <Link
+                href={"/kontakt"}
                 className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
               >
                 Kontaktirajte nas
-              </button>
+              </Link>
             </div>
 
             {/* Right - Image */}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { content } from "@/constants/content";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -41,6 +42,14 @@ const Values = () => {
               <p className="text-lg md:text-xl text-gray-800 italic leading-relaxed text-center">
                 {content.values.brandStatement}
               </p>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link href="/kontakt">
+                <button className="bg-secondary-500 hover:bg-secondary-500/80 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105">
+                  Roditelji imate pitanje? Pišite nam
+                </button>
+              </Link>
             </div>
           </div>
         </div>

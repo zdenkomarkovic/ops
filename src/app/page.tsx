@@ -4,6 +4,7 @@ import ChildFirst from "@/components/ChildFirst";
 import Approach from "@/components/Approach";
 import Values from "@/components/Values";
 import President from "@/components/President";
+import MembershipForm from "@/components/MembershipForm";
 import Gallery from "@/components/Gallery";
 import Education from "@/components/Education";
 import Edukacije from "@/components/Edukacije";
@@ -20,6 +21,7 @@ export default function Home() {
       <Education />
       <Values />
       <President />
+      <MembershipForm />
       <Edukacije />
       <Gallery />
     </>
