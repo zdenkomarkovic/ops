@@ -1,15 +1,14 @@
 import Image from "next/image";
 
-const Gallery = () => {
-  const images = [
-    { src: "/images/6.webp", alt: "Rad sa bebama" },
-    { src: "/images/8.webp", alt: "Podrška razvoju" },
-  ];
+const images = [
+  { src: "/images/6.webp", alt: "Rad sa bebama" },
+  { src: "/images/8.webp", alt: "Podrška razvoju" },
+];
 
+const Gallery = () => {
   return (
     <section id="gallery" className="section-padding ">
       <div className="container-custom">
-        {/* Images Grid */}
         <div className="grid md:grid-cols-2 gap-8  mx-auto">
           {images.map((image, index) => (
             <div

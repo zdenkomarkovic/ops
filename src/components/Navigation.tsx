@@ -15,6 +15,7 @@ const Navigation = () => {
     { name: "Početna", href: "/" },
     { name: "O udruženju", href: "/o-nama" },
     { name: "Kursevi", href: "/kursevi" },
+    { name: "Blog", href: "/blog" },
     { name: "Statut", href: "/statut" },
     { name: "Kontakt", href: "/kontakt" },
   ];

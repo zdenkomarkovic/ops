@@ -18,6 +18,12 @@ export default defineConfig({
             S.listItem()
               .title("Kursevi")
               .child(S.documentTypeList("kurs").title("Kursevi")),
+            S.listItem()
+              .title("Blog")
+              .child(S.documentTypeList("blogPost").title("Blog")),
+            S.listItem()
+              .title("Momenti sa edukacija")
+              .child(S.documentTypeList("edukacijaMoment").title("Momenti sa edukacija")),
           ]),
     }),
     visionTool(),

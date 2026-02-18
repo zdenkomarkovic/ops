@@ -7,7 +7,9 @@ import President from "@/components/President";
 import MembershipForm from "@/components/MembershipForm";
 import Gallery from "@/components/Gallery";
 import Education from "@/components/Education";
-import Edukacije from "@/components/Edukacije";
+import EdukacijeWrapper from "@/components/EdukacijeWrapper";
+
+export const revalidate = 60;
 
 export default function Home() {
   return (
@@ -22,7 +24,7 @@ export default function Home() {
       <Values />
       <President />
       <MembershipForm />
-      <Edukacije />
+      <EdukacijeWrapper />
       <Gallery />
     </>
   );

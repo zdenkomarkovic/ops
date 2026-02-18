@@ -21,7 +21,7 @@ type Edukacija = {
   media: MediaItem[];
 };
 
-const edukacije: Edukacija[] = [
+const staticEdukacije: Edukacija[] = [
   {
     title: "Edukacija",
     date: "Oktobar 2025",
@@ -108,7 +108,8 @@ const edukacije: Edukacija[] = [
   },
 ];
 
-export default function Edukacije() {
+export default function Edukacije({ sanityEdukacije = [] }: { sanityEdukacije?: Edukacija[] }) {
+  const edukacije = [...sanityEdukacije, ...staticEdukacije];
   const [openCard, setOpenCard] = useState<Edukacija | null>(null);
   // null = modal grid view, number = lightbox on that image index
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
