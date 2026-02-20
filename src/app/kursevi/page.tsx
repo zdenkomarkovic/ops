@@ -12,9 +12,29 @@ import {
 } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Kursevi - OPS",
+  title: "Kursevi – OPS | Edukacija za fizioterapeute",
   description:
-    "Pogledajte naše nadolazeće kurseve i edukacije iz oblasti ranog razvoja i fizioterapije.",
+    "Kursevi i edukacije iz oblasti ranog razvoja, motornog razvoja, tortikolisa, hipertonusa i hipotonusa. Stručno usavršavanje za fizioterapeute, radne terapeute i ostale profesionalce.",
+  keywords: [
+    "edukacija za fizioterapeuta",
+    "kursevi fizioterapija",
+    "rani razvoj",
+    "motorni razvoj",
+    "tortikolis",
+    "hipertonus",
+    "hipotonus",
+    "Bobath terapeut",
+    "senzorna integracija kurs",
+  ],
+  alternates: {
+    canonical: "https://udruzenjeops.rs/kursevi",
+  },
+  openGraph: {
+    url: "https://udruzenjeops.rs/kursevi",
+    title: "Kursevi – OPS | Edukacija za fizioterapeute",
+    description:
+      "Kursevi i edukacije iz oblasti ranog razvoja, motornog razvoja, tortikolisa, hipertonusa i hipotonusa.",
+  },
 };
 
 export const revalidate = 60;

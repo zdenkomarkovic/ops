@@ -5,8 +5,27 @@ import { blogListQuery } from "@/sanity/queries";
 import { FaCalendarAlt, FaUser, FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Blog - OPS",
-  description: "Stručni tekstovi i saveti iz oblasti ranog razvoja deteta.",
+  title: "Blog – OPS | Rani razvoj i motorni razvoj deteta",
+  description:
+    "Stručni tekstovi i saveti iz oblasti ranog razvoja i motornog razvoja deteta. Članci o tortikolisu, hipertonusu, hipotenusu i edukaciji fizioterapeuta.",
+  keywords: [
+    "rani razvoj blog",
+    "motorni razvoj",
+    "tortikolis",
+    "hipertonus",
+    "hipotonus",
+    "edukacija za fizioterapeuta",
+    "fizioterapija bebe saveti",
+  ],
+  alternates: {
+    canonical: "https://udruzenjeops.rs/blog",
+  },
+  openGraph: {
+    url: "https://udruzenjeops.rs/blog",
+    title: "Blog – OPS | Rani razvoj i motorni razvoj deteta",
+    description:
+      "Stručni tekstovi i saveti iz oblasti ranog razvoja i motornog razvoja deteta.",
+  },
 };
 
 export const revalidate = 60;

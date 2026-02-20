@@ -35,7 +35,9 @@
       "Bash(FFMPEG=\"E:\\\\Sajtovi\\\\ops\\\\node_modules\\\\ffmpeg-static\\\\ffmpeg.exe\")",
       "Bash(echo:*)",
       "Bash(powershell:*)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(node:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

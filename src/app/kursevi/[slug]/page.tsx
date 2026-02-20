@@ -44,14 +44,23 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  if (!client) return { title: "Kurs - OPS" };
+  if (!client) return { title: "Kursevi | OPS Udruženje" };
   const kurs: Kurs | null = await client.fetch(kursDetailQuery, {
     slug: params.slug,
   });
-  if (!kurs) return { title: "Kurs - OPS" };
+  if (!kurs) return { title: "Kursevi | OPS Udruženje" };
+  const canonical = `https://udruzenjeops.rs/kursevi/${kurs.slug.current}`;
   return {
-    title: `${kurs.naziv} - OPS`,
+    title: kurs.naziv,
     description: kurs.kratakOpis,
+    alternates: { canonical },
+    openGraph: {
+      url: canonical,
+      title: kurs.naziv,
+      description: kurs.kratakOpis,
+      type: 'article',
+      ...(kurs.slika ? { images: [{ url: kurs.slika, alt: kurs.naziv }] } : {}),
+    },
   };
 }
 

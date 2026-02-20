@@ -25,12 +25,12 @@ const staticEdukacije: Edukacija[] = [
   {
     title: "Edukacija",
     date: "Oktobar 2025",
-    media: [
-      {
-        type: "video",
-        src: "/images/edukacije/oktobar-2025/oktobar-2025.mp4",
-      },
-    ],
+    coverImage: "/images/edukacije/oktobar-2025/oktobar-2025-1.webp",
+    media: Array.from({ length: 11 }, (_, i) => ({
+      type: "image" as const,
+      src: `/images/edukacije/oktobar-2025/oktobar-2025-${i + 1}.webp`,
+      alt: `Edukacija oktobar 2025 – slika ${i + 1}`,
+    })),
   },
   {
     title: "Edukacija",

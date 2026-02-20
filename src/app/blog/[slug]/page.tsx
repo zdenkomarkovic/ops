@@ -30,12 +30,21 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  if (!client) return { title: "Blog - OPS" };
+  if (!client) return { title: "Blog | OPS Udruženje" };
   const post: BlogPost | null = await client.fetch(blogDetailQuery, { slug: params.slug });
-  if (!post) return { title: "Blog - OPS" };
+  if (!post) return { title: "Blog | OPS Udruženje" };
+  const canonical = `https://udruzenjeops.rs/blog/${post.slug.current}`;
   return {
-    title: `${post.naslov} - OPS Blog`,
+    title: post.naslov,
     description: post.kratakOpis,
+    alternates: { canonical },
+    openGraph: {
+      url: canonical,
+      title: post.naslov,
+      description: post.kratakOpis,
+      type: 'article',
+      ...(post.slika ? { images: [{ url: post.slika, alt: post.naslov }] } : {}),
+    },
   };
 }
 

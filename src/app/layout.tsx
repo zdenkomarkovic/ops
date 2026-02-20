@@ -8,10 +8,65 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+const siteUrl = 'https://udruzenjeops.rs';
+
 export const metadata: Metadata = {
-  title: 'OPS - Od prvog pokreta do prvog skoka',
-  description: 'Udruženje za podršku ranom razvoju deteta. Pružamo podršku roditeljima i deci kroz emocionalno orijentisan pristup.',
-  keywords: ['rani razvoj deteta', 'fizioterapija za bebe', 'podrška roditeljima', 'Bobath terapija', 'senzorna integracija'],
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'OPS – Rani razvoj deteta i edukacija za fizioterapeute',
+    template: '%s | OPS Udruženje',
+  },
+  description: 'Udruženje OPS posvećeno je podršci ranom razvoju deteta i edukaciji fizioterapeuta. Radimo na motornom razvoju, tretmanu tortikolisa, hipertonusa i hipotonusa kod beba i male dece.',
+  keywords: [
+    'rani razvoj',
+    'rani razvoj deteta',
+    'motorni razvoj',
+    'edukacija za fizioterapeuta',
+    'tortikolis',
+    'hipertonus',
+    'hipotonus',
+    'fizioterapija za bebe',
+    'Bobath terapija',
+    'senzorna integracija',
+    'rani razvoj beba',
+    'fizioterapeut za bebe',
+    'razvojne teškoće',
+  ],
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'sr_RS',
+    url: siteUrl,
+    siteName: 'OPS Udruženje',
+    title: 'OPS – Rani razvoj deteta i edukacija za fizioterapeute',
+    description: 'Udruženje OPS posvećeno je podršci ranom razvoju deteta i edukaciji fizioterapeuta. Motorni razvoj, tortikolis, hipertonus i hipotonus.',
+    images: [
+      {
+        url: '/images/7.webp',
+        width: 1200,
+        height: 630,
+        alt: 'OPS – Od prvog pokreta do prvog skoka',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'OPS – Rani razvoj deteta i edukacija za fizioterapeute',
+    description: 'Udruženje OPS posvećeno je podršci ranom razvoju deteta i edukaciji fizioterapeuta.',
+    images: ['/images/7.webp'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({
