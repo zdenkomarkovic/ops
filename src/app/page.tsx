@@ -9,6 +9,7 @@ import MembershipForm from "@/components/MembershipForm";
 import Gallery from "@/components/Gallery";
 import Education from "@/components/Education";
 import EdukacijeWrapper from "@/components/EdukacijeWrapper";
+import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
   title: "OPS – Od prvog pokreta do prvog skoka | Rani razvoj i edukacija",
@@ -51,6 +52,7 @@ export default function Home() {
       <Education />
       <Values />
       <President />
+      <Testimonials />
       <MembershipForm />
       <EdukacijeWrapper />
       <Gallery />

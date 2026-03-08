@@ -175,6 +175,42 @@ export const content = {
     ],
   },
 
+  testimonials: {
+    title: "Šta kažu roditelji i stručnjaci",
+    items: [
+      {
+        text: "Jelena je promenila moj pogled na rad sa decom. Naučila sam da pratim dete, a ne protokol. Moja praksa je od tada potpuno drugačija.",
+        author: "Milica R.",
+        role: "Fizioterapeut",
+      },
+      {
+        text: "Konačno smo pronašli fizioterapeuta koji je zaista video naše dete – ne dijagnozu, ne kašnjenje, već naše dete. Napredak je bio spor, ali pravi.",
+        author: "Jelena i Marko T.",
+        role: "Roditelji",
+      },
+      {
+        text: "Edukacija je bila transformativna. Pristup koji se ovde uči nije samo teorija – odmah se primenjuje u praksi i deca to osete.",
+        author: "Ana S.",
+        role: "Radni terapeut",
+      },
+      {
+        text: "Moj sin je imao hipertonus i bili smo veoma uplašeni. Zahvaljujući terapiji i podršci, danas se razvija u sopstvenom ritmu, a mi se osećamo kao ravnopravni partneri u tom procesu.",
+        author: "Dragana M.",
+        role: "Majka",
+      },
+      {
+        text: "Kurs senzorne integracije mi je otvorio oči. Preporučujem svim kolegama koji žele da rade savremenije i etičnije sa decom.",
+        author: "Tijana B.",
+        role: "Defektolog",
+      },
+      {
+        text: "Ono što me je najviše pogodilo je poštovanje prema detetu. Ovde se ne radi 'na' detetu – radi se 'sa' njim. To se oseti od prvog dana.",
+        author: "Nevena i Stefan K.",
+        role: "Roditelji",
+      },
+    ],
+  },
+
   contact: {
     title: "Kontakt",
     description:
